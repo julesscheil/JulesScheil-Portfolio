@@ -1,5 +1,9 @@
 .home-pic {
     background-image: url(/assets/images/spotlight.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .caption {
@@ -7,22 +11,61 @@
     width: 100%;
 }
 
-.backgroundImage {
+.headshot {
     vertical-align: middle;
     border-image: 100px solid white;
     margin-bottom: 2%;
     border-radius: 50%;
+
+}
+
+.resize {
+    width: 500px;
+    height: auto;
+}
+
+.resize {
+    width: 400px;
+    height: auto;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     font-family: 'Shadows Into Light', cursive;
+    background-image: url(/assets/images/wood.png);
 }
 
 #border-width {
     border-width: 200px;
 }
+
 #nav-bg {
-    background-color: tan;
     font-weight: bold;
     font-size: larger;
+}
+
+#nametag {
+    font-size: 100px;
+}
+
+form,
+#sub-btn {
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

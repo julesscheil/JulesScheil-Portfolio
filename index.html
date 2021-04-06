@@ -9,12 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -22,14 +18,15 @@
 <body>
     <header>
         <div id="home" class=container-fluid">
-            <nav id="nav-bg" class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav id="nav-bg" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#home"><i class="fa fa-home"></i></a>
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link " href="#aboutme">About Me</a>
                     <a class="nav-item nav-link" href="#projects">Projects</a>
                     <a class="nav-item nav-link" href="#contactme">Contact Me</a>
                     <a class="nav-item nav-link" href="https://github.com/julesscheil" target="_blank">GitHub</a>
-                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/juliana-scheil" target="_blank">LinkedIn</a>
+                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/juliana-scheil"
+                        target="_blank">LinkedIn</a>
                 </div>
             </nav>
         </div>
@@ -41,7 +38,7 @@
                 <h1 id="nametag" class="text-dark text-center">Jules Scheil</h1>
                 <img class="headshot resize" src="assets/images/headshot2.jpg" alt="profilepic">
                 <br>
-                <a class="btn btn-secondary btn-lg" href="assets/Scheil-Juliana-Resume.pdf">resume</a>
+                <a id="sub-btn" class="btn btn-dark btn-lg" href="assets/Scheil-Juliana-Resume.pdf" target="_blank">resume</a>
                 <br>
                 <br>
                 <h1> </h1>
@@ -50,41 +47,50 @@
         <div class=container-fluid">
             <div id="aboutme" class="p-5 m-5 bg-light text-dark text-center">
                 <h1 class="text-darK">ABOUT ME</h1>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci natus excepturi ad ab eius reiciendis distinctio eaque, deleniti veniam!
+                <p id="about-p">
+                    Senior Data Analyst turned Full Stack Web Dev
+                    <br><br>When I'm not in my office, you can find me running, exploring all Atlanta has to offer, or
+                    at Home Depot (home reno)
                 </p>
             </div>
         </div>
         <div id="projects" class="container-fluid p-0">
             <div class="p-5 m-5 bg-light text-dark text-center text-uppercase">
                 <h1 class="text-dark">Projects</h1>
+                <h2 id="small-text">~ Click the picture for repo and "here" for deployed site ~</h2>
                 <div class="container d-flex flex-wrap justify-content-center align-items-center">
                     <div class="row p-3">
                         <div class="border border-dark rounded">
+                            <a href="https://github.com/julesscheil/Project-1" target="_blank">
                             <img class="card-img-top" src="assets/images/bitymi.PNG" alt="Card image cap">
+                        </a>
                             <div class="card-body">
                                 <p class="card-text">Bake it 'Til You Make It <br> This holiday, find new recipes to
-                                    treat your loved ones</p>
+                                    treat your loved ones</p> <a id="links" href="https://julesscheil.github.io/Project-1/"> here!</a>
                             </div>
                         </div>
                     </div>
                     <div class="row p-3">
                         <div class="col-6">
                             <div class="border border-dark rounded">
-                                <img class="card-img-top" src="assets/images/weather.PNG" alt="Card image cap">
+                                <a href="https://github.com/julesscheil/Weather-Dashboard" target="_blank">
+                                    <img class="card-img-top" src="assets/images/weather.PNG" alt="Card image cap">
+                                </a>
                                 <div class="card-body">
                                     <p class="card-text">Find yourself unsure of what to wear on vacation? Check the
-                                        weather with ease, here!</p>
+                                        weather with ease, here!</p><a id="links" href="https://julesscheil.github.io/Weather-Dashboard/"> here!</a>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="border border-dark rounded">
+                            <a href="https://github.com/julesscheil/Horiseon-Code-Refactoring" target="_blank">
                                 <img class="card-img-top" src="assets/images/horiseon.PNG" alt="Card image cap">
+                                </a>
                                 <div class="card-body">
                                     <p class="card-text">Refactoring Horiseon's website to be more mindful of
-                                        accessibility needs</p>
+                                        accessibility needs</p><a id="links" href="https://julesscheil.github.io/Horiseon-Code-Refactoring/"> here!</a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +109,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Say Something!</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write anything here" rows="3"></textarea>
                     </div>
                     <a id="sub-btn" class="btn btn-dark" href="mailto: jules.m.scheil@gmail.com">Send</a>
                 </form>

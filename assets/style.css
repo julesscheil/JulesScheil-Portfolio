@@ -18,7 +18,9 @@
     border-radius: 50%;
 
 }
-
+#small-text {
+    font-size: 20px;
+}
 .resize {
     width: 500px;
     height: auto;
@@ -29,8 +31,13 @@
     height: auto;
 }
 
-p {
+.about-p {
     font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+p,#links {
+    font-size: 20px;
+    color: darkslategrey;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,7 +52,7 @@ body {
 
 #nav-bg {
     font-weight: bold;
-    font-size: larger;
+   
 }
 
 #nametag {
@@ -63,9 +70,7 @@ form,
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    border-bottom: 2px solid darkslategrey; 
+    font-size: 20px;
+    font-weight: bolder;
 }

@@ -10,11 +10,11 @@ p,#links {
 }
 body {
     font-family: 'Shadows Into Light', cursive;
-    background-image: url(/assets/images/wood.png);
+    background-image: url("images/wood.png");
 }
 /* Class Selectors */
 .home-pic {
-    background-image: url(/assets/images/spotlight.png);
+    background-image: url("images/spotlight.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
